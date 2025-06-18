@@ -1,19 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Products from './components/Products';
-import Contact from './components/Contact';
-import Login from './components/Login';
-import Register from './components/Register';
-import Category from './components/Category';
+import Navbar from './components/Header/Navbar';
+import Home from './components/Pages/Homepage/Home';
+import About from './components/Pages/About/About';
+import Products from './components/Pages/Products/Products';
+import Contact from './components//Pages/Contact/Contact';
+import Login from './components/Pages/Authentication/Login';
+import Register from './components/Pages/Authentication/Register';
+import Body from './components/Pages/Body';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Category/>
+      <Body/>
+      
       <Routes>
         <Route path='/' element={Home} />
         <Route path='/about' element={About} />

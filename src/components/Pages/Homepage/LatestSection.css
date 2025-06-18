@@ -1,0 +1,59 @@
+
+.container {
+    max-width: 1300px;
+    margin: 15px auto;
+    padding: 0 0px;
+}
+
+.image-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #eb6767;
+    font-family: "Dancing Script", cursive;
+}
+
+.image-section {
+    text-align: center;
+}
+
+#model-image {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 0px;
+    color: #0e0101;
+    position: relative;
+    z-index: 1;
+}
+
+#model-image img {
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#model-image img:hover {
+    transform: scale(1.03);
+}
+
+#necklace-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0e0101;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    margin-left: 30px;
+}
+
+#necklace-images img {
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#necklace-images img:hover {
+    transform: scale(1.03);
+}

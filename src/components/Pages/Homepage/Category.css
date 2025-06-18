@@ -58,3 +58,16 @@
 .category-menu li:hover::after {
     width: 100%;
 }
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .category-menu {
+        justify-content: start;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    
+}

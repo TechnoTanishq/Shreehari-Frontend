@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base font size for scaling (assumes 1rem = 16px) */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Desktops */
+@media (max-width: 1440px) {
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    
+}
+
+
+
+
+.category-bar {
+    background-color: #fffaf0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 40px;
+    list-style: none;
+    margin: 0;
+    overflow-x: auto;
+}
+
+.category-menu li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap;
+}
+
+.category-menu li i {
+    font-size: 16px;
+    color: #b8860b;
+    transition: transform 0.3s;
+}
+
+.category-menu li:hover {
+    color: #b8860b;
+    transform: scale(1.05);
+}
+
+.category-menu li:hover i {
+    transform: scale(1.2);
+}
+
+.category-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, #d4af37, #b8860b);
+    transition: width 0.3s ease;
+}
+
+.category-menu li:hover::after {
+    width: 100%;
+}
+
+.slides {
+    height: 603px;
+    width: 100%;
+    background-color: red;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.slide img {
+    height: 603px;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: #ffffff97;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 27px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navigation:hover {
+    background-color: rgba(43, 43, 43, 0.503);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 15px auto;
+    padding: 0 0px;
+}
+
+.image-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #eb6767;
+    font-family: "Dancing Script", cursive;
+}
+
+.image-section {
+    text-align: center;
+}
+
+#model-image {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 0px;
+    color: #0e0101;
+    position: relative;
+    z-index: 1;
+}
+
+#model-image img {
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#model-image img:hover {
+    transform: scale(1.03);
+}
+
+#necklace-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0e0101;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    margin-left: 30px;
+}
+
+#necklace-images img {
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#necklace-images img:hover {
+    transform: scale(1.03);
+}
+
+.jewellery-section {
+    padding: 40px 60px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.jewellery-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #311010;
+    font-family: "Ancizar Serif", serif;
+}
+
+.jewellery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.jewel-card {
+    padding: 20px;
+    background-color: #fbdea8;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.jewel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgb(7, 0, 0);
+}
+
+.jewel-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.jewel-card h3 {
+    margin: 10px 0 5px;
+    color: #800000;
+    font-size: 18px;
+}
+
+.jewel-card a {
+    display: block;
+    padding: 8px 0 12px;
+    color: #311010;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.jewel-card a i {
+    margin-left: 6px;
+}
+
+.shop-gen {
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    font-family: "Ancizar Serif", serif;
+    font-size: 20px;
+}
+
+#inner-gen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+}
+
+#inner-gen img {
+    width: 90%;
+    margin: 15px;
+    transition: all 0.3s ease;
+}
+
+#inner-gen img:hover {
+    transform: scale(1.1);
+}
+
+.main-footer {
+    background-color: #111;
+    color: #eee;
+    padding: 50px 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    position: relative;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}

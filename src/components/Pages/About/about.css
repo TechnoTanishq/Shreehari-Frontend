@@ -1,0 +1,167 @@
+/* About Us Section */
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 40px;
+  justify-content: space-between;
+  background-color: #ffe5ad;
+  height: max-content;
+}
+
+.about-text {
+  flex: 1 1 45%;
+  padding-right: 30px;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #b8860b;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Images */
+.about-images {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-images img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  object-fit: cover;
+  object-position: top;
+  height: 400px;
+  margin-left: 200px;
+}
+
+    /* Team Section */
+.team-section {
+  background-color: #fffdf6;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.team-section h2 {
+  color: #b8860b;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #d4af37;
+}
+
+.team-member h4 {
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Timeline Section */
+.timeline-section {
+  background-color: #ffdf9f;
+  padding: 50px 40px;
+}
+
+.timeline-section h2 {
+  color: #b8860b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background: white;
+  padding: 15px 25px;
+  border-left: 4px solid #d4af37;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #d4af37;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 20px;
+}
+
+.timeline-item .year {
+  font-weight: bold;
+  color: #b8860b;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #b8860b;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #fffbe6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  width: 300px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  color: #b8860b;
+  font-weight: bold;
+}

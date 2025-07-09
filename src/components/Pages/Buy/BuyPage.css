@@ -1,0 +1,68 @@
+.buy-page {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.delivery-form h3 {
+    margin-bottom: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.delivery-form input,
+.delivery-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.delivery-form textarea {
+    margin-top: 1rem;
+    height: 100px;
+    resize: vertical;
+}
+
+.billing-summary {
+    margin: 2rem 0 1rem;
+    font-size: 1.1rem;
+}
+
+.payment-button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.payment-btn {
+    background-color: #ffb300;
+    color: #000;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-btn:hover {
+    background-color: #ffa000;
+}
+#grand-total{
+    font-family: sans-serif;
+}
+
+.remove-btn{
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.3rem 0.4rem;
+    border: none;
+    cursor: pointer;
+}

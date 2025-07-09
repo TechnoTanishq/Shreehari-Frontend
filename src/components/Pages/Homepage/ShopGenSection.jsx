@@ -9,15 +9,15 @@ const ShopGenSection = () => {
             <p>Shop by Gender</p>
             <div id="inner-gen">
                 <div className='gen-container'>
-                    <img src="/assets/images/male.jpg" alt="" />
+                    <a href="/products"><img src="/assets/images/male.jpg" alt="" /></a>
                     <h4>Gents Collection</h4>
                 </div>
                 <div>
-                    <img src="/assets/images/female.jpg" alt="" />
+                  <a href="/products"><img src="/assets/images/female.jpg" alt="" /></a>
                     <h4>Ladies Collection</h4>
                 </div>
                 <div>
-                    <img src="/assets/images/kids.jpg" alt="" />
+                  <a href="/products"><img src="/assets/images/kids.jpg" alt="" /></a>
                     <h4>Kids Collection</h4>
                 </div>
             </div>

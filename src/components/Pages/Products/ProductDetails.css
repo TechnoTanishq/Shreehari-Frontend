@@ -1,0 +1,245 @@
+.product-details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.product-image-container {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.product-image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ff3e6c;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+.wishlist {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  color: #ff3e6c;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.product-info-container {
+  flex: 2;
+  min-width: 300px;
+}
+
+.brand {
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 18px;
+  color: #ffb700;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  font-size: 14px;
+  color: #555;
+  margin-left: 8px;
+}
+
+.pricing {
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.price {
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.stock-alert {
+  color: #e60023;
+  font-weight: bold;
+}
+
+.action-buttons {
+  margin: 25px 0;
+}
+
+.btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buy-now {
+  background: #ff9900;
+  color: white;
+}
+
+.add-cart {
+  background: #232f3e;
+  color: white;
+}
+
+.add-cart::after {
+  color: red;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0 10px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.tabs button.active {
+  border-color: #ff9900;
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.tab-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tab-content ul {
+  padding-left: 20px;
+}
+
+.description {
+  display: inline-block;
+}
+
+.hide-description {
+  display: none;
+}
+
+.hide-details {
+  display: none;
+}
+
+.show-details {
+  display: inline-block;
+}
+
+.reviews-list {
+  margin-top: 10px;
+}
+
+.review {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media screen and (max-width: 768px) {
+  .product-details-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .product-image-container,
+  .product-info-container {
+    max-width: 100%;
+  }
+}
+.pincode-check {
+  margin-top: 1rem;
+}
+
+.pincode-input-group {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 10px;
+}
+
+.pincode-input-group input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.pincode-input-group button {
+  padding: 6px 12px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pincode-msg.success {
+  color: green;
+  margin-top: 8px;
+}
+
+.pincode-msg.error {
+  color: red;
+  margin-top: 8px;
+}
+
+
+.thumbnail-gallery {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.thumbnail.active {
+  border-color: #007bff;
+}

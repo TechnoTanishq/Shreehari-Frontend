@@ -7,10 +7,10 @@ const LatestSection = () => {
             <section class="container image-section">
                 <h2>Explore Our Latest Collection</h2>
                 <div id="model-image">
-                    <a href="shop.html"><img src="/assets/images/image2.jpg" alt="banner"/></a>
+                    <a href="/products"><img src="/assets/images/image2.jpg" alt="banner"/></a>
                     <div id="necklace-images">
-                        <img src="/assets/images/necklace3.jpg" alt="necklace-image" height="306px" />
-                        <img src="/assets/images/necklace4.jpg" alt="necklace-image" height="306px" />
+                        <a href="/products"><img src="/assets/images/necklace3.jpg" alt="necklace-image" height="306px" /></a>
+                        <a href="/products"><img src="/assets/images/necklace4.jpg" alt="necklace-image" height="306px" /></a>
                     </div>
                 </div>
             </section>

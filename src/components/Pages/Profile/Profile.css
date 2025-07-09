@@ -1,0 +1,66 @@
+.profile-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #e8c47b88;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-pic {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    border: 2px solid gold;
+    object-fit: cover;
+}
+
+.edit-btn {
+    background-color: gold;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-options {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-option {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+}
+
+.profile-option:hover {
+    background: #fff7d1;
+}
+
+.logout {
+    color: red;
+    font-size: medium;
+    font-weight: 500;
+}

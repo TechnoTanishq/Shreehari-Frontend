@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import "./MainSlider.css"
+import { Link } from 'react-router-dom';  // ✅ Import Link
+import "./MainSlider.css";
 
 const MainSlider = () => {
     const slidesRef = useRef([]);
@@ -8,11 +9,10 @@ const MainSlider = () => {
 
     const slideImages = [
         "/assets/hero-slider/slider1.jpg",
-        "/assets/hero-slider/slider2.webp",
-        "/assets/hero-slider/slider3.webp",
-        "/assets/hero-slider/slider4.webp",
-        "/assets/hero-slider/slider5.webp",
-        "/assets/hero-slider/slider6.webp",
+        "/assets/hero-slider/slider2.jpg",
+        "/assets/hero-slider/slider3.jpg",
+        "/assets/hero-slider/slider4.jpg",
+        "/assets/hero-slider/slider5.jpg",
     ];
 
     const totalSlides = slideImages.length;
@@ -71,7 +71,9 @@ const MainSlider = () => {
                         key={index}
                         ref={(el) => (slidesRef.current[index] = el)}
                     >
-                        <img src={src} alt={`Slide ${index}`} />
+                        <Link to="/products">
+                            <img src={src} alt={`Slide ${index}`} />
+                        </Link>
                     </div>
                 ))}
 
@@ -93,7 +95,6 @@ const MainSlider = () => {
                 </button>
             </div>
 
-            {/* 🔵 Dot Indicators */}
             <div className="dots-container">
                 {slideImages.map((_, index) => (
                     <span

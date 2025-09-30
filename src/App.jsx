@@ -9,7 +9,7 @@ import Login from './components/Pages/Authentication/Login';
 import Register from './components/Pages/Authentication/Register';
 import Body from './components/Pages/Body';
 import Footer from './components/Footer/Footer';
-import Cart from './components/Pages/Cart/cart';
+import Cart from './components/Pages/Cart/';
 import Profile from './components/Pages/Profile/Profile';
 import Admin from './components/Admin/Admin'; 
 import BuyPage from './components/Pages/Buy/BuyPage';

@@ -11,7 +11,7 @@ const Profile = () => {
             alert("Please log in to view your profile.");
             navigate("/login");
         } else {
-            fetch("http://localhost:3000/api/user/me", {
+            fetch("https://shreehari-react.onrender.com/api/user/me", {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }

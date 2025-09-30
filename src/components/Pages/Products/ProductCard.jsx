@@ -52,7 +52,7 @@ const ProductCard = ({ product, fetchQuantity }) => {
           <img
             src={
               product.image?.startsWith("/uploads/")
-                ? `http://localhost:3000${product.image}`
+                ? `https://shreehari-react.onrender.com${product.image}`
                 : product.image
             }
             alt={product.name}

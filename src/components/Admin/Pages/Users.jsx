@@ -7,7 +7,7 @@ const Users = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/admin/users')
+    axios.get('https://shreehari-react.onrender.com/admin/users')
       .then(response => {
         setUsers(response.data);
         setLoading(false);

@@ -10,7 +10,7 @@ const ViewAllProducts = () => {
 
   useEffect(() => {
     console.log(category)
-    fetch('http://localhost:3000/api/products')
+    fetch('https://shreehari-react.onrender.com/api/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data.products);

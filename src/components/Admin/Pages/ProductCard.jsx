@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
         console.log(id);
         let found;
 
-        fetch('http://localhost:3000/api/products')
+        fetch('https://shreehari-react.onrender.com/api/products')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
         setDeleteOpen(false);
 
         try {
-            const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+            const res = await fetch(`https://shreehari-react.onrender.com/api/products/${id}`, {
                 method: 'DELETE',
             });
             console.log('hi')
@@ -61,7 +61,7 @@ const ProductCard = ({ product }) => {
                         src={
 
                             product.image?.startsWith("/uploads/")
-                                ? `http://localhost:3000${product.image}`
+                                ? `https://shreehari-react.onrender.com${product.image}`
                                 : product.image
                         }
                         alt={product.name}

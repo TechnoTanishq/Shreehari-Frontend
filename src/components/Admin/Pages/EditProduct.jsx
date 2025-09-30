@@ -103,7 +103,7 @@ const EditProduct = () => {
         formData.append('existingImage', imagePreview); // Use existing image if no new upload
       }
 
-      await axios.put(`http://localhost:3000/api/products/update/${product._id}`, formData, {
+      await axios.put(`https://shreehari-react.onrender.com/api/products/update/${product._id}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 

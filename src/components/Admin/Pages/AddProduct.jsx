@@ -81,7 +81,7 @@ const AddProduct = () => {
       console.log('hi');
 
 
-      const res = await axios.post('http://localhost:3000/api/products/add', formData, {
+      const res = await axios.post('https://shreehari-react.onrender.com/api/products/add', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       console.log('hi');

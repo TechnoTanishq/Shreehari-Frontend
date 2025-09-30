@@ -7,7 +7,7 @@ export const addToCart = async (product, quantity = 1) => {
     }
 
     try {
-        const res = await fetch("http://localhost:3000/api/cart", {
+        const res = await fetch("https://shreehari-react.onrender.com/api/cart", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export const getCartItems = async () => {
     if (!token) return { error: "Please login to view cart." };
 
     try {
-        const res = await fetch("http://localhost:3000/api/cart", {
+        const res = await fetch("https://shreehari-react.onrender.com/api/cart", {
             headers: {
                 "Authorization": `Bearer ${token}`
             }

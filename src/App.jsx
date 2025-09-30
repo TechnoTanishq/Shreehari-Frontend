@@ -27,7 +27,7 @@ function AppContent() {
   const token = localStorage.getItem("token");
 
   const fetchQuantity = () => {
-    axios.get('http://localhost:3000/api/cart', {
+    axios.get('https://shreehari-react.onrender.com/api/cart', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -18,7 +18,7 @@ const ProductDetails = ({fetchQuantity}) => {
 
   const getMainImage = (prod) => {
     if (prod.image?.startsWith("/uploads/")) {
-      return `http://localhost:3000${product.image}`
+      return `https://shreehari-react.onrender.com${product.image}`
     }
     if (Array.isArray(prod.images) && prod.images.length > 0) return prod.images[0];
     return prod.image || '';
@@ -26,7 +26,7 @@ const ProductDetails = ({fetchQuantity}) => {
 
   useEffect(() => {
     if (!product) {
-      fetch('http://localhost:3000/api/products')
+      fetch('https://shreehari-react.onrender.com/api/products')
         .then(res => res.json())
         .then(data => {
           const found = data.find(p => p._id === id || p.id === id);
@@ -48,7 +48,7 @@ const ProductDetails = ({fetchQuantity}) => {
       if (!token || !product) return;
 
       try {
-        const res = await fetch("http://localhost:3000/api/cart", {
+        const res = await fetch("https://shreehari-react.onrender.com/api/cart", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
@@ -73,7 +73,7 @@ const ProductDetails = ({fetchQuantity}) => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/cart", {
+      const res = await fetch("https://shreehari-react.onrender.com/api/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

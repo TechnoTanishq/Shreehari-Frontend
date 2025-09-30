@@ -9,7 +9,7 @@ const Products = ({fetchQuantity}) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/products') 
+    fetch('https://shreehari-react.onrender.com/api/products') 
       .then(res => res.json())
       .then(data => {
         setProducts(data.products); 

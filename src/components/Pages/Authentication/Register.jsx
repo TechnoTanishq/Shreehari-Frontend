@@ -66,7 +66,7 @@ const Register = () => {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:3000/api/auth/signup', formData);
+      const res = await axios.post('https://shreehari-react.onrender.com/api/auth/signup', formData);
       console.log('User registered:', res.data);
 
       // optionally store token

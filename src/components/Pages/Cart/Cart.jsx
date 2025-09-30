@@ -23,7 +23,7 @@ const Cart = ({ fetchQuantity }) => {
 
 
             try {
-                const response = await fetch("http://localhost:3000/api/cart", {
+                const response = await fetch("https://shreehari-react.onrender.com/api/cart", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -61,7 +61,7 @@ const Cart = ({ fetchQuantity }) => {
         if (confirm.isConfirmed) {
             const token = localStorage.getItem("token");
             try {
-                const res = await fetch(`http://localhost:3000/api/cart/delete/${id}`, {
+                const res = await fetch(`https://shreehari-react.onrender.com/api/cart/delete/${id}`, {
                     method: "DELETE",
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -85,7 +85,7 @@ const Cart = ({ fetchQuantity }) => {
     const updateQty = async (id, change) => {
         const token = localStorage.getItem("token");
         try {
-            const res = await fetch("http://localhost:3000/api/cart/update", {
+            const res = await fetch("https://shreehari-react.onrender.com/api/cart/update", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
